@@ -1,3 +1,4 @@
+import React from "react";
 export default function Posts() {
 
     const posts = [
@@ -56,7 +57,7 @@ function PostImage(props) {
                 <div class="acoes">
                     <div>
                         <ion-icon 
-                            name={curtida} 
+                            name={like} 
                             style={{color: color}}
                             onClick={() => {
                                 (like === "heart-outline") ? setLike("heart") : setLike("heart-outline");
@@ -70,12 +71,12 @@ function PostImage(props) {
                         <ion-icon name="bookmark-outline"></ion-icon>
                     </div>
                 </div>
-            </div>
 
-            <div class="curtidas">
-                <img src={"./assets/img/" + props.post.likesUser + ".svg"} />
-                <div class="texto">
-                    Curtido por <strong>{props.post.likesUser}</strong> e <strong>outras {props.post.likesTotal} pessoas</strong>
+                <div class="curtidas">
+                    <img src={"./assets/img/" + props.post.likesUser + ".svg"} />
+                    <div class="texto">
+                        Curtido por <strong>{props.post.likesUser}</strong> e <strong>outras {props.post.likesTotal} pessoas</strong>
+                    </div>
                 </div>
             </div>
         </div>
