@@ -15,6 +15,7 @@ export default function Navbar() {
             </div>
 
             <div class="instagram-mobile">
+            // eslint-disable-next-line 
                 <img src="./assets/img/logo.png" />
             </div>
 
