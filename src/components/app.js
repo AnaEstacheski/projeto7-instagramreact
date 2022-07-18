@@ -1,13 +1,13 @@
 import Navbar from "./Navbar";
-import Mobilebottombar from "./Mobilebottombar";
 import Body from "./Body";
+import Footer from "./Footer";
 
 export default function App() {
     return (
         <div>
             <Navbar />
             <Body />
-            <Mobilebottombar />
+            <Footer />
         </div>
     );
 } 
